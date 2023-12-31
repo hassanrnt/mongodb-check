@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person CRUD</title>
+</head>
+<body>
+  <h1>Person CRUD</h1>
+  <form id="person-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+    <label for="favoriteFoods">Favorite Foods (comma-separated):</label>
+    <input type="text" id="favoriteFoods" name="favoriteFoods">
+    <button type="button" onclick="createPerson()">Create Person</button>
+  </form>
+  <h2>People List</h2>
+  <ul id="person-list"></ul>
+  <script src="/scripts.js"></script>
+</body>
+</html>
